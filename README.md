@@ -1,6 +1,7 @@
 # Algorithm_Practice
 각 코딩 테스트를 위한 코드 저장소
 ## 폴더 구조
+```
 algorithms-practice/
 ├── baekjoon/
 │   ├── 1000_a_plus_b.py
@@ -13,3 +14,4 @@ algorithms-practice/
 │   ├── 1_two_sum.py
 │   └── README.md
 └── README.md
+```
