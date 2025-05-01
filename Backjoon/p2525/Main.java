@@ -23,13 +23,18 @@ public class Main {
 		
 		int C = sc.nextInt();
 		
-		if (B + C >= 60) {
-			B = B + C - 60;
-			A += 1;
-		} else {
-			
+		B = B + C % 60;
+		A = A + C / 60;
+		
+		if (B >= 60) {
+			B -= 60;
+			A++;
 		}
-		System.out.println();
+		if (A >= 24) {
+			A -= 24;
+		}
+		
+		System.out.println(A + " " + B);
 	}
 }
 // C / 60 의 값 -> A에 더하고, C % 60의 값은 -> B에 더함
