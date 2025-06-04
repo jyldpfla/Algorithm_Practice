@@ -1,6 +1,5 @@
 package p25304;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -22,11 +21,17 @@ public class Main {
 		
 		int X = Integer.parseInt(sc.nextLine());
 		int N = Integer.parseInt(sc.nextLine());
-		ArrayList list = new ArrayList<Integer>();
-		
+
+		int total = 0;
 		for(int i = 1; i <= N; i++) {
-			System.out.println(sc.nextInt());
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			
+			total += a * b;
 		}
-		System.out.println();
+		
+		System.out.println(total == X ? "Yes" : "No");
+		
+		sc.close();
 	}
 }
